@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Dev</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: coral;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: azure;
+        }
+        #contato {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            flex-direction: row;
+        }
+        #formulario_contato {
+            background-color: tomato;
+            opacity: 50%;
+            font-size: 18px;
+            width: 350px;
+            height: 310px;
+        }
+        hr {
+            margin-top: 5%;
+            border: solid 1px tomato;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+        #rodape {
+            margin-top: 25px;
+            justify-content: center;
+            display: flex;
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+        }
+        #box_rodape1 {
+            display: flex;
+            background-color: white;
+            width: 1650px;
+            height: 250px;
+            flex-direction: row;
+            opacity: 50%;
+        }
+        #bloco_rodape1 {
+            width: 35%;
+            height: 100%;
+        }
+        #bloco_rodape2 {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
+        }
+        #bloco_rodape3 {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body background="image/fundo.png">
+    <div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div id="contato">
+        <div id="formulario_contato">
+            <form autocomplete="on" action="#" method="get">
+                <fieldset>
+                    <legend>Fale conosco aqui</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" value="" placeholder="Nome" required autofocus
+                        required><br>
+                    <label for="login">E-mail:</label>
+                    <input type="text" id="login" name="login" placeholder="E-mail" required><br>
+                    <label for="produto">Produto de Interesse:</label><br>
+                    <input type="text" id="produto" name="produto" value="" placeholder="Digite um Produto"><br>
+                    <textarea name="mensagem" id="mensagem" rows="10" cols="30"
+                        placeholder="Deixe aqui algum comentário adicional"></textarea><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar Formulário">
+                </fieldset>
+        </div>
+    </div>
+    <hr>
+    <div id="rodape">
+        <div id="box_rodape1" style="display: flex;" flex-direction="column" justify-content="center">
+            <div id="bloco_rodape1">
+                <img src="image/logo.png" justify-content="left" margin-top="5" width="125px" height="125px">
+            </div>
+            <div id="bloco_rodape2">
+                <h2>Sunset Dev Consultoria S/A</h2>
+                <h3>24.368.966.0001/03</h3>
+            </div>
+            <div id="bloco_rodape3">
+                <h3>Formas de Pagamento</h3>
+                <img src="image/pagamento.png" width="325px" style="opacity: 100;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Dev</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: coral;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: azure;
+        }
+        #titulo_produto {
+            display: flex;
+            justify-content: center;
+            color: tomato;
+            font-style: normal;
+        }
+        #produto {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+        }
+        #produto1 {
+            display: flex;
+            width: 550px;
+            height: 600px;
+        }
+        #texto_produto1 {
+            margin-left: 35px;
+            margin-right: 35px;
+            color: tomato;
+            text-align: center;
+        }
+        #produto2 {
+            display: flex;
+            width: 550px;
+            height: 600px;
+            margin-right: 5px;
+        }
+        #texto_produto2 {
+            margin-left: 35px;
+            margin-right: 35px;
+            color: tomato;
+            text-align: center;
+        }
+        #produto3 {
+            display: flex;
+            width: 550px;
+            height: 600px;
+            margin-right: 5px;
+        }
+        #texto_produto3 {
+            margin-left: 35px;
+            margin-right: 35px;
+            color: tomato;
+            text-align: center;
+        }
+        #tabela_preco {
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            color: tomato;
+        }
+        .t1 {
+            text-align: left;
+        }
+        hr {
+            margin-top: 5%;
+            border: solid 1px tomato;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+        #rodape {
+            margin-top: 25px;
+            justify-content: center;
+            display: flex;
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+        }
+        #box_rodape1 {
+            display: flex;
+            background-color: white;
+            width: 1650px;
+            height: 250px;
+            flex-direction: row;
+            opacity: 50%;
+        }
+        #bloco_rodape1 {
+            width: 35%;
+            height: 100%;
+        }
+        #bloco_rodape2 {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
+        }
+        #bloco_rodape3 {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body background="image/fundo.png">
+    <div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div id="titulo_produto">
+        <h1>Nossos Produtos</h1>
+    </div>
+    <div id="produto" style="display: flex;" flex-direction="column" justify-content="center" ;>
+        <div div id="produto1" style="margin-top:20px;  margin-left: 1px; display: flex; flex-direction: column;">
+            <img src="image/produtos1.jpg" width="550" height="355"></img>
+            <div id="texto_produto1">
+                <h2>E-Commerce</h2>
+            </div>
+        </div>
+        <div div id="produto2" style="margin-top:20px;  margin-left: 2px; display: flex; flex-direction: column;">
+            <img src="image/produtos2.jpg" width="550" height="355"></img>
+            <div id="texto_produto2">
+                <h2>Site Institucional</h2>
+            </div>
+        </div>
+        <div div id="produto3" style="margin-top:20px;  margin-left: 0px; display: flex; flex-direction: column;">
+            <img src="image/produtos3.jpg" width="545" height="355"></img>
+            <div id="texto_produto3">
+                <h2>Consultoria e SEO</h2>
+            </div>
+        </div>
+    </div>
+    <div id="tabela_preco">
+        <table>
+            <capition style="margin: 350px; width:50%; position:fixed;">Minha tabela<capition>
+                    <tr>
+                        <th colspan="3">Preços</th>
+                    </tr>
+                    <tr>
+                        <th class="t1">E-commerce</th>
+                        <td>80.000,00</td>
+                    </tr>
+                    <tr>
+                        <th class="t1">Site Institucional</th>
+                        <td>12.000,00</td>
+                    </tr>
+                    <tr>
+                        <th class="t1">Consultoria e SEO</th>
+                        <td>15.000,00</td>
+                    </tr>
+        </table>
+    </div>
+    <hr>
+    <div id="rodape">
+        <div id="box_rodape1" style="display: flex;" flex-direction="column" justify-content="center">
+            <div id="bloco_rodape1">
+                <img src="image/logo.png" justify-content="left" margin-top="5" width="125px" height="125px">
+            </div>
+            <div id="bloco_rodape2">
+                <h2>Sunset Dev Consultoria S/A</h2>
+                <h3>24.368.966.0001/03</h3>
+            </div>
+            <div id="bloco_rodape3">
+                <h3>Formas de Pagamento</h3>
+                <img src="image/pagamento.png" width="325px" style="opacity: 100;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
